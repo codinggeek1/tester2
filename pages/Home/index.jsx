@@ -30,7 +30,6 @@ const home = () => {
     <div className='home'>
         <video src={videoBg} autoPlay loop muted />
         </div>
-    </div>
   )
 }
 
