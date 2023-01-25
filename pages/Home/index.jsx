@@ -25,7 +25,7 @@ const home = () => {
 
   })
   
-  
+  const home = () => {
   return (
     <div className='main'>
         <div className="overlay"></div>
