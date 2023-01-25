@@ -4,6 +4,8 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Creator from '../../components/Creator'
 import { useEffect, useState} from 'react'
+import React from 'react'
+import videoBg from '../Assets/WhatsApp Video 2023-01-25 at 22.12.10.mp4'
 
 
 const home = () => {
@@ -24,13 +26,16 @@ const home = () => {
 
   })
   
+  const home = () => {
   return (
-    <div className="bg-cyan-900">
-  
-      <Header />
-      <Creator/>
-      <Footer/>
-  </div>
+    <div className='main'>
+        <div className="overlay"></div>
+        <video src={videoBg} autoPlay loop muted />
+        <div className="content">
+            <h1>Welcome</h1>
+            <p>To my site.</p>
+        </div>
+    </div>
   )
 }
 
