@@ -25,7 +25,13 @@ const home = () => {
   })
   
   return (
-    <div className="bg-gray-700">
+    <LinearGradient
+        colors={['red', 'yellow', 'green' ]}
+        style={styles.linearGradient}
+        start={{ x: 0.5, y: 1 }}
+      >
+        <Text>Diagonal Gradient</Text>
+      </LinearGradient>
   
       <Header />
       <Creator/>
